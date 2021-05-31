@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <!-- navbar - menu -->
+    <div class="navbar-fixed">
+        <nav class="green">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">BARYGA</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Pagrindinis</a></li>
+                    <li><a href="services.html">Paslaugos</a></li>
+                    <li><a href="#contacts">Kontaktai</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Pagrindinis</a></li>
+        <li><a href="services.html">Paslaugos</a></li>
+        <li><a href="#contacts">Kontaktai</a></li>
+    </ul>
+    <!-- navbar - menu -->
+
+
+    <!-- parallax -->
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="mountains.jpg"></div>
+    </div>
+
+    <div class="section white">
+        <div class="row container">
+            <h2 class="header" id="contacts">Kontaktai</h2>
+            <p class="grey-text text-darken-3 lighten-3">Susisiekite pagal zemiau pateiktus kontaktus:</p>
+            <address>
+                <table>
+                    <tr>
+                        <td>El.Paštas:</td>
+                        <td>Gabrielius@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Telefonas</td>
+                        <td>862626336</td>
+                    </tr>
+                </table>
+            </address>
+        </div>
+    </div>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="whiteMountains.jpg"></div>
+    </div>
+
+    <!-- parallax -->
+
+
+
+
+
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, {});
+
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.parallax');
+            var instances = M.Parallax.init(elems, {});
+        });
+    </script>
+
+
+</body>
+
+</html>

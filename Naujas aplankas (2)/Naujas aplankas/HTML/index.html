@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="html, css ir javascript kalbu mokymosi svetaine">
+    <meta name="keywords" content="html, css, javascript, programming, beginner, noob">
+    <meta name="author" content="Gabrielius Sutkus">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        h3 {
+            color: green;
+            text-align: center;
+            text-shadow: 1px 1px 3px black;
+        }
+
+        p {
+            line-height: 20px;
+            letter-spacing: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <select id="languageChanger">
+            <option value="en">en</option>
+            <option value="lt">lt</option>
+        </select>
+    </div>
+
+
+
+    <ul class="nav">
+        <li>
+            <a href="lists(sarasa).html" class="menu" translation-menu-lists>Sąrašai</a>
+        </li>
+        <li>
+            <a href="https://www.google.lt/" target="_blank" class="menu" translation-menu-remote>Nutolusios svetaines
+                adresas</a>
+        </li>
+        <li>
+            <a href="https://www.vilniuscoding.lt/kas-mes/" target="_blank" class="menu" translation-menu-whoWeAre>Kas
+                mes</a>
+        </li>
+        <li>
+            <a href="#kontaktai" class="menu" translation-menu-contacts>kontaktai</a>
+        </li>
+
+        <li>
+            <a href="gallery.html" class="menu" translation-menu-images>Galerija</a>
+        </li>
+        <li>
+            <a href="forms.html" class="menu">Formos elementai</a>
+        </li>
+    </ul>
+
+    <!-- Žemiau naudojami elementai h1, h2, h3, p, adress yra blokiniai elementai -->
+    <!-- Zemiau naudojami elementai i, em, strong, span -->
+
+    <h1>Sveikas pasauli!</h1>
+    <h2>Sveikas žmogau!</h2>
+    <h3>Woohoo</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus provident recusandae impedit nostrum magnam
+        quibusdam omnis minima, sunt veritatis voluptates ipsam nihil, consectetur voluptatibus reprehenderit et hic</p>
+
+    <p><em> ipsum dolor sit amet consectetur adipisicing elit. Sunt fugiat accusamus <strong> delectus hic quia
+                consectetur</strong> cumque. Rerum, dignissimos consequatur. Corrupti suscipit fuga quibusdam aliquid
+            eos dignissimos tempora porro</em> ex.</p>
+
+    <p><i><br> Lorem ipsum dolor sit amet consectetur <br>
+            <hr> elit. Quo fugiat deleniti cum sequi vel fuga, porro velit minima cumque eum tenetur veritatis
+            perspiciatis, <b>molestiae sit delectus?</b> Dolores doloribus minima quo.
+        </i></p>
+
+    <p><i><br> Lorem ipsum dolor sit amet consectetur <br>
+            <hr> elit. Quo fugiat deleniti cum sequi vel fuga, porro velit minima cumque eum tenetur veritatis
+            perspiciatis, <b>molestiae sit delectus?</b> Dolores doloribus minima quo.
+        </i></p>
+
+    <p><i><br> Lorem ipsum dolor sit amet consectetur <br>
+            <hr> elit. Quo fugiat deleniti cum sequi vel fuga, porro velit minima cumque eum tenetur veritatis
+            perspiciatis, <b>molestiae sit delectus?</b> Dolores doloribus minima quo.
+        </i></p>
+
+    <p><i><br> Lorem ipsum dolor sit amet consectetur <br>
+            <hr> elit. Quo fugiat deleniti cum sequi vel fuga, porro velit minima cumque eum tenetur veritatis
+            perspiciatis, <b>molestiae sit delectus?</b> Dolores doloribus minima quo.
+        </i></p>
+
+    <p><i><br> Lorem ipsum dolor sit amet consectetur <br>
+            <hr> elit. Quo fugiat deleniti cum sequi vel fuga, porro velit minima cumque eum tenetur veritatis
+            perspiciatis, <b>molestiae sit delectus?</b> Dolores doloribus minima quo.
+        </i></p>
+
+    <p><i><br> Lorem ipsum dolor sit amet consectetur <br>
+            <hr> elit. Quo fugiat deleniti cum sequi vel fuga, porro velit minima cumque eum tenetur veritatis
+            perspiciatis, <b>molestiae sit delectus?</b> Dolores doloribus minima quo.
+        </i></p>
+
+    <p><i><br> Lorem ipsum dolor sit amet consectetur <br>
+            <hr> elit. Quo fugiat deleniti cum sequi vel fuga, porro velit minima cumque eum tenetur veritatis
+            perspiciatis, <b>molestiae sit delectus?</b> Dolores doloribus minima quo.
+        </i></p>
+
+    <p><i><br> Lorem ipsum dolor sit amet consectetur <br>
+            <hr> elit. Quo fugiat deleniti cum sequi vel fuga, porro velit minima cumque eum tenetur veritatis
+            perspiciatis, <b>molestiae sit delectus?</b> Dolores doloribus minima quo.
+        </i></p>
+
+    Sveikas
+
+    <p>pasauli!</p>
+
+    <address id="kontaktai">
+        <p>El.Pastas: <a href="mailto:10.sutkus@gmail.com">Gabrielius@gmail.com</a></p>
+        <p>Telefonas: 862626336</p>
+    </address>
+
+    <span style="color: blue">Sveikas</span>
+    <span style="color:brown">Pasauli</span>
+
+    &lt;h1&gt; - sis h elementas yra pats didziausias
+
+
+    <script src="js/translations.js"></script>
+
+    <script>
+
+        let localStorage = window.localStorage;
+
+        let lang = localStorage.getItem("lang");
+
+        if (!lang) {
+            lang = document.querySelector("#languageChanger").value;
+        }
+        else{
+            document.querySelector("#languageChanger").value = lang;
+        }
+
+        let translation = getLanguageTranslations(lang);
+
+        document.querySelector("[translation-menu-lists]").innerText = translation.menu.lists;
+        document.querySelector("[translation-menu-remote]").innerText = translation.menu.remote;
+
+
+        document.querySelector("#languageChanger").addEventListener("Change", function () {
+            //lokiga pakeitus kalba
+            console.log(this.value);
+            let.translation = getLanguageTranslations(this.value);
+
+            document.querySelector("[translation-menu-lists]").innerText = translation.menu.lists;
+            document.querySelector("[translation-menu-remote]").innerText = translation.menu.remote;
+
+            localStorage.setItem("lang", this.value);
+
+
+        });
+
+
+      
+    </script>
+
+
+
+</body>
+
+</html>

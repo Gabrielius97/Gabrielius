@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/slideshow.css">
+
+
+</head>
+
+<body>
+    <!-- navbar - menu -->
+    <div class="navbar-fixed">
+        <nav class="#212121 grey darken-4">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">Guitar Shop</a>
+                <ul class="right hide-on-med-and-dow">
+                    <li><a href="index.html" class="menu" translation-menu-index>PAGRINDINIS</a></li>
+                    <li><a href="acoustic-guitars.html" class="menu" translation-menu-acoustic>AKUSTINĖS GITAROS</a></li>
+                    <li><a href="electric-guitars.html" class="menu" translation-menu-electric>ELEKTRINĖS GITAROS</a></li>
+                    <li><a href="bass-guitars.html" class="menu" translation-menu-bass>BOSINĖS GITAROS</a></li>
+                    <li><a href="accessories.html" class="menu" translation-menu-other>PRIEDAI</a></li>
+                    <li><a href="contacts.html" class="menu" translation-menu-contacts>KONTAKTAI</a></li>
+                    <li>
+                        <div class="input-field col" style="width: 60px;">
+                            <select id="languageChanger">
+                                <option value="lt">LT</option>
+                                <option value="en">EN</option>
+                                <option value="es">ES</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- navbar - menu -->
+    <center>
+        <iframe width="1360" height="640" src="https://www.youtube.com/embed/vkr9p3_w7kI" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </center>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/slideshow.js"></script>
+    <script src="js/translations.js"></script>
+    <script src="js/translationLocalStorage.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, {});
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.parallax');
+            var instances = M.Parallax.init(elems, {});
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems, {});
+        });
+
+
+    </script>
+</body>
+
+</html>

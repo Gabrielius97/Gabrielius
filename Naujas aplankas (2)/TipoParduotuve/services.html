@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <!-- navbar - menu -->
+    <nav class="black">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Logo</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Pagrindinis</a></li>
+                <li><a href="services.html">Paslaugos</a></li>
+                <li><a href="contacts.html">Kontaktai</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Pagrindinis</a></li>
+        <li><a href="services.html">Paslaugos</a></li>
+        <li><a href="contacts.html">Kontaktai</a></li>
+    </ul>
+    <!-- navbar - menu -->
+
+
+    <main class="container">
+        <h1>Pirkiniai</h1>
+
+        <div class="row">
+            <div class="col l3 m4 s12">
+                <div class="card">
+                    <div class="card-image">
+                        <img class="materialboxed" src="clothes.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Dzemperis<i
+                                class="material-icons right">more_vert</i></span>
+                        <!-- <p><a href="">aprašymas</a></p> -->
+                        <table>
+                            <tr>
+                                <td>Kaina</td>
+                                <td>NUOLAIDA: 80Eu.</td>
+                            </tr>
+                        </table>
+                        <p><del>Kaina: 100eu</del></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Aprasymo pavadinimas<i
+                                class="material-icons right">close</i></span>
+                        <p>Aprasymas lenteles viduje</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col l3 m4 s12">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="dzinsai.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Džinsai<i
+                                class="material-icons right">more_vert</i></span>
+                        <!-- <p><a href="#">blabla</a></p> -->
+                        <table>
+                            <tr>
+                                <td>Kaina: 120eu</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Aprašymo pavadinimas<i
+                                class="material-icons right">close</i></span>
+                        <p>Axujieni džinsai</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col l3 m4 s12">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="clothes.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">maikons<i
+                                class="material-icons right">more_vert</i></span>
+                        <!-- <p><a href="#">nuoroda</a></p> -->
+                        <table>
+                            <tr>
+                                <td>Kaina</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">maike<i
+                                class="material-icons right">close</i></span>
+                        <p>axujiena maike</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col l3 m4 s12">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="clothes.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">megztinis<i
+                                class="material-icons right">more_vert</i></span>
+                        <!-- <p><a href="#"></a></p> -->
+                        <table>
+                            <tr>
+                                <td>Kaina: 30eu</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Megztinis<i
+                                class="material-icons right">close</i></span>
+                        <p>pussy magnet megztinis</p>
+                    </div>
+                </div>
+            </div>
+
+            
+
+
+
+    </main>
+
+
+
+
+
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, {});
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.materialboxed');
+            var instances = M.Materialbox.init(elems, options);
+        });
+    </script>
+
+</body>
+
+</html>

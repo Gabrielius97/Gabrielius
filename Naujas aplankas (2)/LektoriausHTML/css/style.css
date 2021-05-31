@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+h3{
+    color: brown!important;
+}
+
+#kontaktai{
+    font-style: normal;
+}
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+}

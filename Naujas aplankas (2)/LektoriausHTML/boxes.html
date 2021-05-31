@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        
+        div{
+            width: 100px;
+            min-height: 100px;
+            background-color: springgreen;
+            
+            
+            padding: 5px;/* 10px 15px 20px;
+/*  arba
+            padding-top: 5px;
+            padding-right: 10px;
+            padding-bottom: 15px;
+            padding-left: 20px; */
+/* 
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+            arba: */
+            border: 1px solid black;
+            margin: 5px;
+            overflow: hidden;
+            box-shadow: 1px 1px 5px black;
+
+            border-radius: 60px;
+        }
+
+        img{
+            width: 100%;
+        }
+
+        body div:nth-child(1){
+            /* visibility: hidden;  elementas nematomas lieka toje pacioje vietoje*/
+
+            /* dokukmentas pasalinamas */
+            display: none;
+        }
+
+        .relative{
+            position: relative;
+            left: 100px; /* nuo kairės */
+            top: -500px;
+        }
+
+        .absolute{
+            position: absolute;
+            left: 100px;
+        }
+
+        .fixed{
+            position: fixed;
+            right:0px;
+        }
+
+        footer{
+            position: fixed;
+            bottom: 0px;
+            width: 100%;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Dėžutės - blokiniai elementai</h1>
+
+    <div class="fixed">
+        Laba diena
+    </div>
+
+    <div class="absolute">
+        Laba diena 2
+    </div>
+
+    <div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil laboriosam eaque, possimus veritatis dolorem autem adipisci nobis eligendi dolor perferendis labore sunt quae magnam eum molestiae dolore similique placeat debitis?
+    </div>
+    <div class="relative">
+        <img src="dog.webp">
+    </div>
+
+    <footer>
+        Zigmantas Račkauskas
+    </footer>
+</body>
+</html

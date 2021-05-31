@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+
+        .thumb{
+            width: 200px;
+        }
+
+        .modal{
+            display: none;
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.514);
+            /* zemiau esantis kodas iscentruoja vaikinius elementus per viduri vertikaliai ir horizontaliai */
+            justify-content: center; 
+            align-items: center;
+        }
+
+        .modal-content{
+            width: 800px;
+            height: 600px;
+            /* background-color: blue; */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="modal">
+        <div class="modal-content"></div>
+    </div>
+
+    <div class="container">
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/imagesService.js"></script>
+    <script>
+        getImages();
+
+        document.querySelector(".modal").addEventListener("click", function(){
+            // this = document.querySelector(".modal") siuo atveju
+            this.setAttribute("style", "display:none");
+        })
+    </script>
+</body>
+</html>

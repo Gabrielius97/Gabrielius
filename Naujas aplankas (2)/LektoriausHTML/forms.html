@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [selected]{
+            font-weight: bold;
+        }
+
+        [onclick$='Data()']{
+            background-color: chocolate;
+        }
+
+        input[type='text'], 
+        input[type='password'], 
+        textarea{
+            background-color: cyan;
+        }
+
+        form div input[type='button']{
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+        }
+
+        a:visited{
+            color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <a href="index.html">Grįžti į pradinį puslapį</a>
+    <h1>Formos</h1>
+
+    <fieldset>
+        <legend>Prisijungimas nenaudojant table</legend>
+        <div>
+            <label>Username:</label> <input type="text">
+        </div>
+        <div>
+            <label>Password:</label> <input type="text">
+        </div>
+        <input type="button" value="Prisijungti" onclick="connect()">
+    </fieldset>
+
+    <fieldset>
+        <legend>Prisijungimas naudojant table</legend>
+
+        <table>
+            <tr>
+                <td><label>Username:</label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label>Passwordaaaaaaaa:</label></td>
+                <td><input type="text"></td>
+            </tr>
+
+        </table>
+
+        <input type="button" value="Prisijungti">
+    </fieldset>
+
+
+
+    <fieldset>
+        <legend>Registracija</legend>
+        <form action="forms.html" method="POST">
+            <div>
+                <label for="firstName">Vardas:</label>
+                <input type="text" name="firstName" id="firstName">
+            </div>
+
+            <div>
+                <label for="lastName">Pavardė:</label>
+                <input type="text" name="lastName" id="lastName">
+            </div>
+
+            <div>
+                <label>Amžius (nuo 18 iki 150):</label>
+                <input type="range" name="age" value="30" min="18" max="150">
+            </div>
+
+            <div>
+                <label>Lytis:</label>
+                <input type="radio" name="gender" value="V"><label>Vyras</label>
+                <input type="radio" name="gender" value="M"><label>Moteris</label>
+            </div>
+
+            <div>
+                <label>Slaptažodis</label>
+                <input type="password" name="password1">
+            </div>
+            <div>
+                <label>Pakartokite slaptažodį</label>
+                <input type="password" name="password2">
+            </div>
+
+            <div>
+                <label for="">Kokias kalbas mokate:</label>
+                <input type="checkbox" name="languages" value="en"><label>Anglų</label>
+                <input type="checkbox" name="languages" value="lt"><label>Lietuvių</label>
+                <input type="checkbox" name="languages" value="de"><label>Vokiečių</label>
+                <input type="checkbox" name="languages" value="sv"><label>Švedų</label>
+            </div>
+
+            <div>
+                <label>Ar norite užsiprenumeruoti naujienlaiškį?</label>
+                <select name="prenumeration" id="">
+                    <option value="Yes">Taip</option>
+                    <option value="No" selected>Ne</option>
+                    <option value="Maybe">Galbūt</option>
+                </select>
+            </div>
+
+            <div>
+                <div style="margin-bottom: 20px;">
+                    <label>Pageidavimas</label>
+                </div>
+                <div>
+                    <textarea name="comment" id="" cols="60" rows="10"></textarea>
+                </div>
+            </div>
+            
+            <div>
+                <input type="button" value="Siųsti" onclick="sendData()">
+            </div>
+
+        </form>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Registracija</legend>
+        <form action="forms.html" method="POST">
+            <table>
+                <tr>
+                    <td><label for="firstName">Vardas:</label></td>
+                    <td><input type="text" name="firstName" id="firstName"></td>
+                </tr>
+                <tr>
+                    <td><label for="lastName">Pavardė:</label></td>
+                    <td><input type="text" name="lastName" id="LastName"></td>
+                </tr>
+                <tr>
+                    <td><label>Amžius (nuo 18 iki 150):</label></td>
+                    <td><input type="range" name="age" value="30" min="18" max="150"></td>
+                </tr>
+            </table>
+
+            <label for="">Kokias kalbas mokate:</label>
+            <table>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="languages" value="en">
+                    </td>
+                    <td>
+                        <label>Anglų</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="languages" value="lt">
+                    </td>
+                    <td>
+                        <label>Lietuvių</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="languages" value="de">
+                    </td>
+                    <td>
+                        <label>Vokiečių</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="languages" value="sv">
+                    </td>
+                    <td>
+                        <label>Švedų</label>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+</body>
+
+</html>

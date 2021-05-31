@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="css/bar.css">
+    <style>
+        /* .navbar-fixed{
+            top: 50px;
+        } */
+
+
+
+        .navbar {
+            position: sticky;
+            top: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- language changer button -->
+
+    <!-- language changer button -->
+
+
+    <!-- navbar - menu -->
+    <div class="navbar-fixed">
+        <nav class="#212121 grey darken-4">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">Guitar Shop</a>
+                <ul class="right hide-on-med-and-dow">
+                    <li><a href="index.html" class="menu" translation-menu-index>PAGRINDINIS</a></li>
+                    <li><a href="acoustic-guitars.html" class="menu" translation-menu-acoustic>AKUSTINĖS GITAROS</a></li>
+                    <li><a href="electric-guitars.html" class="menu" translation-menu-electric>ELEKTRINĖS GITAROS</a></li>
+                    <li><a href="bass-guitars.html" class="menu" translation-menu-bass>BOSINĖS GITAROS</a></li>
+                    <li><a href="accessories.html" class="menu" translation-menu-other>PRIEDAI</a></li>
+                    <li><a href="#contacts" class="menu" translation-menu-contacts>KONTAKTAI</a></li>
+                    <li>
+                        <div class="input-field col" style="width: 60px;">
+                            <select id="languageChanger">
+                                <option value="lt">LT</option>
+                                <option value="en">EN</option>
+                                <option value="es">ES</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- navbar - menu -->
+
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="photos/index/gibson.jpg" style="width:100%">
+            <div class="text"><a href="les-paul.html" class="menu">Gibson Les Paul</a></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="photos/index/metal.jpg" style="width:100%">
+            <div class="text"><a href="jackson.html" class="jackson">Jackson X series</a></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext2">3 / 5</div>
+            <img src="photos/index/ltd-bass.jpg" style="width:100%">
+            <div class="text"><a href="bass-guitar.html" class="jackson">Ltd bass guitar</a></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="photos/index/gibson-acoustic.jpg" style="width:100%">
+            <div class="text"><a href="gibson-acoustic.html" class="menu">Gibson acoustic guitars</a></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext2">5 / 5</div>
+            <img src="photos/index/Marshall_logo.svg.png" style="width:100%">
+            <div class="text"><a href="marshall.html" class="menu">Marshall Amps</a></div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    <!-- Slideshow container end -->
+    <center>
+        <div class="bar" id="languageChanger" >
+            <h2 translation-menu-newItems>Naujausios prekės</h2>
+        </div>
+    </center>
+
+    <main class="container" id="languageChanger">
+        <h1 translation-menu-recommended>Siūlomos prekės: </h1>
+
+        <div class="row">
+            <div class="col l3 m4 s12">
+                <div class="card">
+                    <div class="card-image">
+                        <img class="materialboxed" src="photos/newGuitars/gibson.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Gibson Les Paul Traditional 2018<i
+                                class="material-icons right">more_vert</i></span>
+                        <!-- <p><a href="">aprašymas</a></p> -->
+                        <table>
+                            <tr>
+                                <td>Kaina</td>
+                                <td>899,00 €</td>
+                            </tr>
+                        </table>
+                        <br>
+                        <a href="shoppingCart.html" class="waves-effect waves-light btn-small" translation-menu-buy>Pirkti</a>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Gibson Les Paul Traditional 2018<i
+                                class="material-icons right">close</i></span>
+                        <li>Tipas: elektrinė gitara.</li>
+                        <li>Korpusas: raudonmedis</li>
+                        <li>Korpuso viršus: klevas</li>
+                        <li>Grifas: raudonmedis</li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col l3 m4 s12">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="photos/newGuitars/bass-guitar.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Warwick RockBass Corvette 5 NB TS
+                            CHR<i class="material-icons right">more_vert</i></span>
+                        <!-- <p><a href="#"></a></p> -->
+                        <table>
+                            <tr>
+                                <td>Kaina: 950,00 €</td>
+                            </tr>
+                        </table>
+                        <a href="shoppingCart-warwick.html" class="waves-effect waves-light btn-small">Pirkti</a>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Warwick RockBass Corvette 5 NB TS<i
+                                class="material-icons right">close</i></span>
+                        <li>Tipas: bosinė gitara</li>
+                        <li>Gamintojas: Warwick</li>
+                        <li>Modelis: RockBass Corvette 5 NB TS CHR</li>
+                        <li>Korpusas: juodmedis</li>
+                        <li>Grifas: klevas</li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col l3 m4 s12">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="photos/newGuitars/acoustic3.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4"><i
+                                class="material-icons right">more_vert</i>Elektroakustinė gitara Gibson G-45
+                            Studio</span>
+                        <!-- <p><a href="#"></a></p> -->
+                        <table>
+                            <tr>
+                                <td>Kaina: 1 199,00 €</td>
+                            </tr>
+                        </table>
+                        <a href="shoppingCart-electro-acoustic-gibson.html" class="waves-effect waves-light btn-small">Į krepšelį</a>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Elektroakustinė gitara Gibson G-45 studio<i
+                                class="material-icons right">close</i></span>
+                        <li>Tipas: Elektro-akustinė gitara</li>
+                        <li>Gamintojas: Gibson</li>
+                        <li>Modelis: G-45 studio</li>
+                        <li>Viršutinė deka: Eglės masyvas</li>
+                        <li>Grifas: Utile</li>
+                        <li>Skirsnių skaičius: 20</li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col l3 m4 s12">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="photos/newGuitars/gibson-sg.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Elektrinė gitara Gibson SG standart<i
+                                class="material-icons right">more_vert</i></span>
+                        <!-- <p><a href="#"></a></p> -->
+                        <table>
+                            <tr>
+                                <td>Kaina: 995.99 €</td>
+                            </tr>
+                        </table>
+                        <a href="shoppingCart-gibson-sg.html" class="waves-effect waves-light btn-small">Į krepšelį</a>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Elektrinė gitara Gibson SG standart<i
+                                class="material-icons right">close</i></span>
+                        <li>Tipas: elektrinė gitara</li>
+                        <li>Gamintojas: Gibson</li>
+                        <li>Korpusas: Raudonmedis</li>
+                        <li>Grifas: Klevas</li>
+                        <li>Ėmikliai: 1 x 490R, 1 x 490T</li>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- parallax -->
+            <div class="parallax-container">
+                <div class="parallax"><img src="photos/index/Marshall_logo.svg.png"></div>
+            </div>
+
+            <div class="section white">
+                <div class="row container">
+                    <div class="bar" id="languageChanger">
+                        <h2 class="header" id="contacts" translation-menu-contacts2>Kontaktai</h2>
+                    </div>
+                    <p class="grey-text text-darken-3 lighten-3" id="languageChanger" translation-menu-contactsBelow>Susisiekite pagal žemiau pateiktus
+                        kontaktus:</p>
+                    <address>
+                        <table class="highlight">
+                            <tr id="languageChanger">
+                                <td translation-menu-email>El.paštas:</td>
+                                <td>Guitar-shop@gmail.com</td>
+                            </tr>
+                            <tr id="languageChanger">
+                                <td translation-menu-telephone>Telefonas:</td>
+                                <td>+37065423698</td>
+                            </tr>
+                        </table>
+                        
+                    </address>
+                    <br><right>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d590.7771026831726!2d25.29106306195245!3d54.675966862796514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd943fa1e363c1%3A0x5331a16ade340735!2sTamsta!5e0!3m2!1slt!2slt!4v1622219576267!5m2!1slt!2slt" width="750" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe></right>
+                </div>
+            </div>
+
+            <!-- parallax -->
+
+
+
+
+
+            <!--JavaScript at end of body for optimized loading-->
+            <script type="text/javascript" src="js/materialize.min.js"></script>
+            <script src="js/slideshow.js"></script>
+            <script src="js/translations.js"></script>
+            <script src="js/translationLocalStorage.js"></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    var elems = document.querySelectorAll('.sidenav');
+                    var instances = M.Sidenav.init(elems, {});
+                });
+
+                document.addEventListener('DOMContentLoaded', function () {
+                    var elems = document.querySelectorAll('.parallax');
+                    var instances = M.Parallax.init(elems, {});
+                });
+
+                document.addEventListener('DOMContentLoaded', function () {
+                    var elems = document.querySelectorAll('select');
+                    var instances = M.FormSelect.init(elems, {});
+                });
+
+
+            </script>
+</body>
+
+</html>

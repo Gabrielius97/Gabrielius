@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Dar neatsimenu vardo</h1>
+    <input type="text" id="name">
+    <button id="rememberMe">Atsimink mane</button>
+    <button id="forgetUs">Pamiršk mus</button>
+
+
+    <script>
+        let localStorage = window.localStorage;
+
+        let names = localStorage.getItem("names");
+
+        if (names) {
+            document.querySelector("h1").innerText = names;
+        }
+
+        document.querySelector("#rememberMe").addEventListener("click", function () {
+            // kodas vykdomas paspaudus mygtuka
+
+            if (names) { //visus kartus vykdoma si dalis.
+                names += "," + document.querySelector("#name").value;
+                localStorage.setItem("names", names);
+            }
+            else { // else dalis vykdoma viena karta, pirma/
+                localStorage.setItem("names", document.querySelector("#name").value)
+            }
+        })
+
+        document.querySelector("#forgetUs").addEventListener("click", function(){
+            localStorage.clear();
+            //localStorage.setItem("names", "")
+        })
+
+    </script>
+</body>
+
+</html>
